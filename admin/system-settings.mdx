@@ -1,0 +1,56 @@
+---
+title: "System Settings and Global Configuration"
+sidebarTitle: "System Settings"
+description: "Configure platform-wide settings for your AiSensa organization, including general preferences, display options, and system defaults."
+---
+
+As an administrator, this section gives you centralized control over the platform-wide settings that govern how AiSensa behaves across your entire organization. Review each setting carefully before making changes, as updates here may affect all users and connected services.
+
+## General Settings
+
+Use the fields below to configure the core identity and localization preferences for your organization. These values are applied globally unless overridden at the user or workspace level.
+
+<ParamField path="organizationName" type="string">
+  Placeholder — Enter the display name for your organization as it should appear across the platform.
+</ParamField>
+
+<ParamField path="defaultLanguage" type="string">
+  Placeholder — Specify the default language for the platform interface (e.g., English, French, Spanish).
+</ParamField>
+
+<ParamField path="timezone" type="string">
+  Placeholder — Set the default timezone used for scheduling, timestamps, and reporting across your organization.
+</ParamField>
+
+<ParamField path="dateFormat" type="string">
+  Placeholder — Choose how dates are displayed throughout the platform (e.g., MM/DD/YYYY, DD/MM/YYYY, YYYY-MM-DD).
+</ParamField>
+
+<ParamField path="defaultCurrency" type="string">
+  Placeholder — Define the default currency symbol and format used in billing summaries and usage reports.
+</ParamField>
+
+## Feature Toggles
+
+You can enable or disable specific platform features for your organization from this panel. Toggling a feature off will hide it from all users until it is re-enabled. The table below lists the features that are available to configure.
+
+| Feature | Status | Description |
+|---|---|---|
+| [Feature Name 1] | Enabled / Disabled | Placeholder — Brief description of what this feature does and who it affects. |
+| [Feature Name 2] | Enabled / Disabled | Placeholder — Brief description of what this feature does and who it affects. |
+| [Feature Name 3] | Enabled / Disabled | Placeholder — Brief description of what this feature does and who it affects. |
+| [Feature Name 4] | Enabled / Disabled | Placeholder — Brief description of what this feature does and who it affects. |
+
+## Advanced Settings
+
+Advanced settings control lower-level platform behavior and are intended for experienced administrators. Incorrect configuration may disrupt platform functionality or impact all users in your organization.
+
+<Warning>
+  Changes made in this section can have significant effects across your entire organization. Ensure you fully understand each setting before applying changes, and consider testing in a non-production environment first. Contact AiSensa support if you are unsure about a specific option.
+</Warning>
+
+[Placeholder — Describe each advanced setting here, such as API rate limits, session timeout durations, data retention policies, or custom domain configuration. Provide guidance on recommended values or safe defaults where applicable.]
+
+<Note>
+  Remember to save your changes after updating any settings on this page. Unsaved changes will be lost if you navigate away. Some settings may require a platform refresh or short propagation period before taking effect for all users.
+</Note>

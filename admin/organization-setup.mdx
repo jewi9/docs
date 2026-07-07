@@ -1,0 +1,74 @@
+---
+title: "Set Up and Configure Your Organization"
+sidebarTitle: "Organization Setup"
+description: "Configure your AiSensa organization profile, set organizational defaults, and manage the foundational settings for your team."
+---
+
+As an administrator, this page walks you through the initial setup and ongoing configuration of your AiSensa organization. Complete each step below to establish the foundational settings your team will rely on, and refer to the settings reference section whenever you need to revisit or update your organization's configuration.
+
+## Getting Started
+
+<Steps>
+  <Step title="Create Your Organization">
+    [Describe how an administrator creates a new organization in AiSensa — e.g., navigating to the Organizations section, clicking the creation button, and entering a unique organization name and identifier.]
+  </Step>
+  <Step title="Configure Organization Profile">
+    [Describe how to fill in the organization profile details — e.g., display name, logo, contact email, billing address, and any other identifying information relevant to the organization.]
+  </Step>
+  <Step title="Set Default Settings">
+    [Describe how to configure organization-wide defaults — e.g., default language/locale, time zone, notification preferences, and feature toggles that apply to all users unless overridden at the user level.]
+  </Step>
+  <Step title="Invite Initial Users">
+    [Describe how to send the first round of user invitations from within the organization setup flow — e.g., entering email addresses, selecting initial roles, and dispatching invitation emails.]
+  </Step>
+  <Step title="Review and Confirm">
+    [Describe how to review a summary of all configuration choices before finalizing setup — e.g., confirming organization name, defaults, and invited users, then clicking a Confirm or Finish button.]
+  </Step>
+</Steps>
+
+---
+
+## Organization Settings Reference
+
+Below is a reference for the key settings available in your organization's configuration panel. Update these settings at any time by navigating to **Settings → Organization**.
+
+<ResponseField name="Organization Name" type="string" required>
+  [Describe this field — e.g., the publicly displayed name of your organization as it appears across the AiSensa platform and in any outgoing communications.]
+</ResponseField>
+
+<ResponseField name="Organization Slug / Identifier" type="string" required>
+  [Describe this field — e.g., a unique URL-safe identifier used in your organization's AiSensa subdomain or API references. Cannot be changed after creation without contacting support.]
+</ResponseField>
+
+<ResponseField name="Default Time Zone" type="string">
+  [Describe this field — e.g., the time zone applied to all scheduled actions, reports, and timestamps across the organization unless individually overridden by a user.]
+</ResponseField>
+
+<ResponseField name="Default Notification Preferences" type="object">
+  [Describe this field — e.g., the organization-wide defaults for email and in-app notifications, which individual users can override from their personal settings.]
+</ResponseField>
+
+<ResponseField name="[Placeholder Setting Name]" type="[type]">
+  [Describe this field — replace with an additional organization-level setting relevant to your product, such as a data retention policy, SSO configuration toggle, or allowed authentication methods.]
+</ResponseField>
+
+---
+
+<Warning>
+  **Administrator Responsibility** — [Insert a warning relevant to your product here. For example: changes made to organization-wide settings affect all users immediately. Certain changes, such as modifying the organization identifier or enabling SSO, may disrupt active sessions. Review all changes carefully before saving.]
+</Warning>
+
+---
+
+## Next Steps
+
+Once your organization is set up, use the resources below to continue building out your administrative configuration.
+
+<CardGroup cols={2}>
+  <Card title="User Management" icon="users" href="/admin/user-management">
+    [Brief description — e.g., invite additional users, manage existing accounts, and control user access within your organization.]
+  </Card>
+  <Card title="Roles & Permissions" icon="shield-halved" href="/admin/roles-permissions">
+    [Brief description — e.g., define roles, assign permissions, and create custom roles to control what each user can see and do in AiSensa.]
+  </Card>
+</CardGroup>

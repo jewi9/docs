@@ -1,0 +1,75 @@
+---
+title: "Configuring Administrator Notifications"
+sidebarTitle: "Notifications"
+description: "Set up and manage notification preferences for your AiSensa organization, including alerts for critical events and system changes."
+---
+
+[Opening paragraph: Introduce the notifications system for administrators — explain why configuring notifications matters, what kinds of events can trigger alerts, and the benefit of staying informed about critical activity, policy violations, or system changes without having to manually monitor the admin panel.]
+
+## Notification Channels
+
+[Introductory sentence: Explain that AiSensa supports multiple delivery channels for notifications and that administrators can enable one or more depending on their team's workflow. Use the tabs below to set up each channel.]
+
+<Tabs>
+  <Tab title="Email">
+    [Introductory sentence: Describe the Email notification channel — for example, how notifications are delivered to one or more administrator email addresses.]
+
+    [Placeholder Step 1: Describe how the administrator navigates to the Email notification settings — e.g., Admin Panel → Notifications → Email.]
+
+    [Placeholder Step 2: Describe how the administrator adds or confirms the recipient email address(es) for notifications.]
+
+    [Placeholder Step 3: Describe how the administrator selects which notification types should be delivered via email and saves the configuration.]
+
+    [Placeholder: Note any limits — for example, the maximum number of email recipients or any email domain restrictions.]
+  </Tab>
+  <Tab title="In-App">
+    [Introductory sentence: Describe the In-App notification channel — for example, how alerts appear within the AiSensa interface for logged-in administrators.]
+
+    [Placeholder Step 1: Describe how the administrator navigates to the In-App notification settings.]
+
+    [Placeholder Step 2: Describe how to enable or disable the in-app notification bell or notification center.]
+
+    [Placeholder Step 3: Describe how to configure which event types generate in-app alerts and how to set notification priority or urgency levels.]
+
+    [Placeholder: Note any relevant details — for example, how long in-app notifications are retained or whether they can be marked as read/dismissed in bulk.]
+  </Tab>
+  <Tab title="Webhook">
+    [Introductory sentence: Describe the Webhook notification channel — for example, how AiSensa can POST notification payloads to an external endpoint, enabling integration with tools like Slack, PagerDuty, or custom systems.]
+
+    [Placeholder Step 1: Describe how the administrator navigates to the Webhook notification settings and creates a new webhook endpoint.]
+
+    [Placeholder Step 2: Describe the required fields — for example, the target URL, authentication header or secret, and payload format (JSON).]
+
+    [Placeholder Step 3: Describe how to test the webhook connection and verify that payloads are being received correctly at the destination.]
+
+    [Placeholder: Note any retry behavior — for example, how many times AiSensa will retry a failed webhook delivery and after what interval.]
+  </Tab>
+</Tabs>
+
+## Notification Types
+
+[Introductory sentence: The table below lists the built-in notification types available in AiSensa. You can enable or disable each type per channel in your notification settings.]
+
+| Notification | Trigger | Default |
+|---|---|---|
+| [Notification 1 — e.g., Failed Login Attempt] | [Describe the specific event or condition that triggers this notification.] | [State whether this notification is enabled or disabled by default.] |
+| [Notification 2 — e.g., New User Invitation] | [Describe the specific event or condition that triggers this notification.] | [State whether this notification is enabled or disabled by default.] |
+| [Notification 3 — e.g., Role Permission Change] | [Describe the specific event or condition that triggers this notification.] | [State whether this notification is enabled or disabled by default.] |
+| [Notification 4 — e.g., Usage Limit Threshold Reached] | [Describe the specific event or condition that triggers this notification.] | [State whether this notification is enabled or disabled by default.] |
+| [Notification 5 — e.g., Integration Disconnected] | [Describe the specific event or condition that triggers this notification.] | [State whether this notification is enabled or disabled by default.] |
+
+## Managing Notification Rules
+
+[Introductory sentence: Explain that beyond the default notification types, AiSensa allows administrators to create custom notification rules to match their organization's specific needs.]
+
+[Placeholder: Describe how to create a custom notification rule — for example, by combining a trigger condition (event type + threshold) with a target channel and recipient list.]
+
+[Placeholder: Describe how to edit an existing notification rule — for example, how to change the trigger conditions, the delivery channel, or the recipients without deleting and recreating the rule.]
+
+[Placeholder: Describe how to disable or delete a notification rule and any confirmation steps required to prevent accidental removal of critical alerts.]
+
+[Placeholder: If applicable, describe how to test a notification rule — for example, a "Send Test Notification" button that fires a sample payload to verify delivery before the rule goes live.]
+
+<Tip>
+  [Tip content: Recommend a best practice for notification management — for example, advising administrators to route critical security alerts (failed logins, permission changes) to both email and a webhook-connected channel like Slack or PagerDuty to ensure alerts are never missed, even when no one is actively logged into AiSensa.]
+</Tip>
